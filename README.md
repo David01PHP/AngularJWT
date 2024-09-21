@@ -6,22 +6,27 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## DocumentaTion
+https://reqres.in/api-docs/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+##allowed users
 
-## Build
+Only users in the api can register
+    'george.bluth@reqres.in',
+    'janet.weaver@reqres.in',
+    'eve.holt@reqres.in',
+    'charles.morris@reqres.in',
+    'emma.wong@reqres.in',
+    'tracey.ramos@reqres.in',
+    'michael.lawson@reqres.in',
+    'lindsay.ferguson@reqres.in',
+    'tobias.funke@reqres.in',
+    'byron.fields@reqres.in',
+    'george.edwards@reqres.in',
+    'rachel.howell@reqres.in'
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## tool
+JWT
+Angular-material
+api reqres
+Angular cli 14
