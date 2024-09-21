@@ -1,0 +1,62 @@
+<div class="page-container">
+  <!-- Navbar con logo -->
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <img src="https://via.placeholder.com/100x50.png?text=LOGO" alt="Logo" />
+    </div>
+    <div class="user-info">
+      <button mat-button color="warn" (click)="logout()">Cerrar Sesión</button>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="content-container">
+    <h2>Administración de Usuarios</h2>
+
+    <button mat-raised-button color="primary" (click)="loadUsers()">Cargar Usuarios</button>
+
+    <!-- Tabla centrada -->
+    <div class="table-container">
+      <table mat-table [dataSource]="users" class="mat-elevation-z8">
+
+        <!-- ID Column -->
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef> ID </th>
+          <td mat-cell *matCellDef="let user"> {{user.id}} </td>
+        </ng-container>
+
+        <!-- Email Column -->
+        <ng-container matColumnDef="email">
+          <th mat-header-cell *matHeaderCellDef> Email </th>
+          <td mat-cell *matCellDef="let user"> {{user.email}} </td>
+        </ng-container>
+
+        <!-- First Name Column -->
+        <ng-container matColumnDef="first_name">
+          <th mat-header-cell *matHeaderCellDef> Nombre </th>
+          <td mat-cell *matCellDef="let user"> {{user.first_name}} </td>
+        </ng-container>
+
+        <!-- Last Name Column -->
+        <ng-container matColumnDef="last_name">
+          <th mat-header-cell *matHeaderCellDef> Apellido </th>
+          <td mat-cell *matCellDef="let user"> {{user.last_name}} </td>
+        </ng-container>
+
+        <!-- Actions Column -->
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef> Acciones </th>
+          <td mat-cell *matCellDef="let user">
+            <button mat-raised-button color="primary" (click)="viewUser(user.id)">Ver</button>
+            <button mat-raised-button color="accent" (click)="updateUser(user.id)">Actualizar</button>
+            <button mat-raised-button color="warn" (click)="deleteUser(user.id)">Eliminar</button>
+          </td>
+        </ng-container>
+
+        <!-- Header and Row Definitions -->
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  </div>
+</div>

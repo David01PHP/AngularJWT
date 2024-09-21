@@ -1,0 +1,24 @@
+<body>
+<div class="login-container">
+    <div class="login-form">
+      <h2>Iniciar Sesión</h2>
+      <form (submit)="onLogin()">
+        <mat-form-field class="full-width">
+          <mat-label>Email</mat-label>
+          <input matInput [(ngModel)]="email" name="email" required>
+        </mat-form-field>
+  
+        <mat-form-field class="full-width">
+          <mat-label>Password</mat-label>
+          <input matInput [(ngModel)]="password" name="password" type="password" required>
+        </mat-form-field>
+  
+        <button mat-raised-button color="primary" type="submit" class="login-button">Login</button>
+      </form>
+          <!-- Enlace debajo del botón -->
+    <div class="register-link">
+      <a routerLink="/register">¿Desea registrarte?</a>
+    </div>
+    </div>
+  </div>
+</body>  

@@ -1,0 +1,84 @@
+/* Fondo general de la página */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('https://dinahosting.com/blog/upload/2021/08/formularios-1170x658.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-logo img {
+    height: 50px;
+  }
+  
+  /* Contenedor del contenido principal */
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Centrar la tabla */
+  .table-container {
+    margin-top: 20px;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo de la tabla */
+  table {
+    width: 100%;
+    border-spacing: 0 15px; /* Separación entre filas */
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  th {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  td {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  td button {
+    margin-right: 10px; /* Separación entre botones */
+  }
+  
+  /* Ancho completo de los botones */
+  button {
+    width: auto;
+    margin: 5px;
+  }
+  
