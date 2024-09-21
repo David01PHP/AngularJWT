@@ -26,7 +26,7 @@ Only users in the api can register
     'rachel.howell@reqres.in'
 
 ## tool
-JWT
-Angular-material
-api reqres
+JWT,
+Angular-material,
+api reqres,
 Angular cli 14
